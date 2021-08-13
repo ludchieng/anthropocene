@@ -1,13 +1,13 @@
 {
-  "title": "Aledslide 🏰",
+  "title": "Anthropocene 🌍",
   "lang": "fr",
   "favicon": "/assets/favicon.png",
   "author": "Ludwig Chieng",
   "email": "lud.chieng@hotmail.fr",
   "url": "https://anthropocene.ludchieng.fr",
   "github": {
-    "label": "@ludchieng/aledslide",
-    "href": "https://github.com/ludchieng/aledslide"
+    "label": "@ludchieng/anthropocene",
+    "href": "https://github.com/ludchieng/anthropocene"
   },
-  "greetings": "Regardez cette magnifique liste de cours !"
+  "greetings": "L'anthropocène est un concept qu'on utilise aujourd'hui pour parler de l'impact des activités humaines sur la Terre. Notre emprise sur celle-ci est devenu si importante que les changements irréversibles des écosystèmes menacent le fonctionnement de nos sociétés. Ce cours dresse une synthèse des éléments importants à savoir, de mon point de vue, sur la crise de l'anthropocène. L'idée est de survoler et de faire le lien entre les thématiques clés. Le but n'est donc pas de les voir en détail."
 }

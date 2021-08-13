@@ -1,0 +1,159 @@
+<section>
+
+  <section data-transition="slide">
+    <h2>Comprendre les enjeux des émissions de GES</h2>
+
+    <div class="w9">
+      <canvas data-chart="line">
+        <!-- {
+          "data": {
+            "datasets": [
+              { 
+                "label": "Historique",
+                "data":[
+                  { "x":    1, "y": 0.02 }, { "x":   78, "y":-0.14 }, { "x":  130, "y":-0.04 }, { "x":  182, "y":-0.03 }, { "x":  247, "y": 0.04 }, { "x":  324, "y": 0.15 }, { "x":  389, "y": 0.18 }, { "x":  428, "y": 0.24 }, { "x":  480, "y": 0.24 }, { "x":  584, "y": 0.17 }, { "x":  766, "y": 0.31 }, { "x":  986, "y": 0.48 }, { "x": 1233, "y": 0.60 }, { "x": 1531, "y": 0.91 }
+                ],
+                "pointRadius": 4,
+                "borderColor": "#888888",
+                "borderWidth": 4,
+                "backgroundColor": "transparent"
+              },{
+                "label": "Scénario RCP 6.0",
+                "data":[
+                  { "x": 1531, "y": 0.91 }, { "x": 1778, "y": 1.12 }, { "x": 2089, "y": 1.33 }, { "x": 2414, "y": 1.54 }, { "x": 2751, "y": 1.80 }, { "x": 3153, "y": 2.04 }, { "x": 3633, "y": 2.30 }, { "x": 4152, "y": 2.58 }, { "x": 4736, "y": 2.88 }, { "x": 5255, "y": 3.12 }
+                ],
+                "pointRadius": 4,
+                "borderColor": "#f89643",
+                "borderWidth": 4,
+                "backgroundColor": "transparent"
+              }
+            ]
+          },
+          "options": {
+            "title": {
+              "text": [ "Anomalies de température en fonction des émissions cumulées de CO2. Données IPCC AR5 (2014). 🧪🧪" ]
+            },
+            "scales": {
+              "xAxes": [{
+                "type": "linear",
+                "gridLines": false,
+                "scaleLabel" : { "display": "true", "labelString": "Émissions cumulées de CO2 d'origine humaine depuis 1870 (GtCO2)" },
+                "gridLines": {
+                  "color": "#0000"
+                }
+              }],
+              "yAxes": [{
+                "gridLines": false,
+                "scaleLabel" : { "display": "true", "labelString": "Anomalies de température par rapport à 1861-1880 (°C)" },
+                "gridLines": {
+                  "color": "#0000"
+                }
+              }]
+            },
+            "annotation": {
+              "annotations": [{
+                "type": "line",
+                "scaleID": "x-axis-0",
+                "value": "78",
+                "borderColor": "#0000",
+                "borderWidth": 3,
+                "label": {
+                  "backgroundColor": "#42a8ff",
+                  "content": "1890",
+                  "yAdjust": 245,
+                  "xAdjust": 25,
+                  "fontSize": 24,
+                  "enabled": true
+                }
+              },{
+                "type": "line",
+                "scaleID": "x-axis-0",
+                "value": "1531",
+                "borderColor": "#0000",
+                "borderWidth": 3,
+                "label": {
+                  "backgroundColor": "#42a8ff",
+                  "content": "2010",
+                  "yAdjust": 50,
+                  "xAdjust": -20,
+                  "fontSize": 24,
+                  "enabled": true
+                }
+              },{
+                "type": "line",
+                "scaleID": "x-axis-0",
+                "value": "5255",
+                "borderColor": "#0000",
+                "borderWidth": 3,
+                "label": {
+                  "backgroundColor": "#42a8ff",
+                  "content": "2100",
+                  "yAdjust": -245,
+                  "xAdjust": 0,
+                  "fontSize": 24,
+                  "enabled": true
+                }
+              },{
+                "type": "line",
+                "scaleID": "y-axis-0",
+                "mode": "horizontal",
+                "value": "2",
+                "borderColor": "#ff62c899",
+                "borderWidth": 3,
+                "label": {
+                  "backgroundColor": "#ff42a8",
+                  "content": "2°C",
+                  "xAdjust": -80,
+                  "fontSize": 24,
+                  "enabled": true
+                }
+              },{
+                "type": "line",
+                "scaleID": "x-axis-0",
+                "value": "3100",
+                "borderColor": "#ff62c899",
+                "borderWidth": 3,
+                "label": {
+                  "backgroundColor": "#ff42a8",
+                  "content": "3100",
+                  "yAdjust": 240,
+                  "fontSize": 24,
+                  "enabled": true
+                }
+              }]
+            },
+            "elements": {
+              "line": { "tension": 0.00001 }
+            }
+          }
+        } -->
+      </canvas>
+    </div>
+
+    <div class="mt32 fragment">
+      <ul>
+        <li>La <b>quantité de CO<sub>2</sub></b> dans l'atmosphère est un des principaux déterminants du réchauffement</li>
+        <li>Se fixer une limite du réchauffement à +2°C, c'est se donner un <b>budget carbone</b> à 3100 GtCO<sub>2</sub></li>
+      </ul>
+    </div>
+
+    <aside class="notes" data-markdown>
+      __1:24:00__
+      * Plus on va vers en haut à droite, plus on se met dans la sauce
+      * L'objectif politique mondial, qui a été fixé en 2015, c'est de rester dans le rectangle rose en bas à gauche
+    </aside>
+
+  </section>
+
+  <section data-transition="slide">
+    <p><b>Source</b></p>
+    <ul class="w10">
+        <li>
+          « Augmentation de la température moyenne à la surface du globe en fonction du total cumulé des émissions de dioxyde de carbone (CO2) dans le monde, calculé à partir de plusieurs sources de données. »
+          <a href="https://www.ipcc.ch/site/assets/uploads/2018/02/SYR_AR5_FINAL_full_fr.pdf#page=85">
+          IPCC AR5 SYR Fig2.3</a> 🧪🧪
+        </li>
+    </ul>
+  </section>
+
+</section>

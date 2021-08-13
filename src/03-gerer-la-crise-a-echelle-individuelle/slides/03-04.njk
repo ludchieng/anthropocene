@@ -1,0 +1,100 @@
+<section>
+
+  <section data-transition="slide">
+    <h2>Et à l'échelle individuelle ?</h2>
+    <p>Écogestes, combien on y gagne si on s'y met au max ?</p>
+
+    <div class="w10 txt-l">
+      <canvas data-chart="bar">
+        <!-- {
+          "data": {
+            "labels": ["Actuelle", "", "", "", "", "", "Objectif"],
+            "datasets": [
+              { "data":[10.8, 0, 0, 0, 0, 0, 2], "backgroundColor": "#5C4B51", "label": "" },
+              { "data":[0, [9.68,10.80], 0, 0, 0, 0, 0], "backgroundColor": "#F06060", "borderColor": "#A04040", "borderWidth": 1, "label": "Alimentation végétarienne" },
+              { "data":[0, [9.51, 9.68], 0, 0, 0, 0, 0], "backgroundColor": "#F06060", "borderColor": "#A04040", "borderWidth": 1, "label": "Alimentation locale" },
+              { "data":[0, 0, [9.24, 9.51], 0, 0, 0, 0], "backgroundColor": "#8CBEB2", "borderColor": "#5C8E82", "borderWidth": 1, "label": "Transport covoiturage sur tous trajets" },
+              { "data":[0, 0, [8.92, 9.24], 0, 0, 0, 0], "backgroundColor": "#8CBEB2", "borderColor": "#5C8E82", "borderWidth": 1, "label": "Transport vélo pour trajet court" },
+              { "data":[0, 0, [8.65, 8.92], 0, 0, 0, 0], "backgroundColor": "#8CBEB2", "borderColor": "#5C8E82", "borderWidth": 1, "label": "Transport sans avion" },
+              { "data":[0, 0, 0, [8.49, 8.65], 0, 0, 0], "backgroundColor": "#F2EBBF", "borderColor": "#B2AB9F", "borderWidth": 1, "label": "Logement baisse du chauffage" },
+              { "data":[0, 0, 0, [8.47, 8.49], 0, 0, 0], "backgroundColor": "#F2EBBF", "borderColor": "#B2AB9F", "borderWidth": 1, "label": "Logement éclairage LED" },
+              { "data":[0, 0, 0, 0, [8.31, 8.47], 0, 0], "backgroundColor": "#F3B562", "borderColor": "#B38542", "borderWidth": 1, "label": "Biens achetés d'occasion" },
+              { "data":[0, 0, 0, 0, [8.09, 8.31], 0, 0], "backgroundColor": "#F3B562", "borderColor": "#B38542", "borderWidth": 1, "label": "Biens moins de vêtements neufs" },
+              { "data":[0, 0, 0, 0, [8.00, 8.09], 0, 0], "backgroundColor": "#F3B562", "borderColor": "#B38542", "borderWidth": 1, "label": "Biens usage gourde et zéro déchet" },
+              { "data":[0, 0, 0, 0, 0, [7.20, 8.00], 0], "backgroundColor": "#91C46C", "borderColor": "#71944C", "borderWidth": 1, "label": "Investissement voiture bas-carbone" },
+              { "data":[0, 0, 0, 0, 0, [6.00, 7.20], 0], "backgroundColor": "#91C46C", "borderColor": "#71944C", "borderWidth": 1, "label": "Investissement chaudière bas-carbone et isolation" }
+            ]
+          },
+          "options": {
+            "title": { "text": [ "Impact des écogestes (effort maximal) sur l'empreinte carbone des français·e·s.", "Données calculées par Carbone 4. 🔷" ] },
+            "scales":{
+              "xAxes": [{ "stacked": "true", "gridLines": "#0000" }],
+              "yAxes": [{ "scaleLabel" : { "display": "true", "labelString": "Empreinte carbone (tCO2eq / hab / an)" } }] },
+            "legend": { "position": "right" },
+            "plugins": { "datalabels": { "opacity": "1" } }
+          }
+        } -->
+      </canvas>
+    </div>
+
+    <aside class="notes" data-markdown>
+      __0:XX:00__
+    </aside>
+  </section>
+
+  <section>
+    <div class="txt-sm">
+      <p><b>Source</b></p>
+      <ul>
+        <li>
+          <p>Précisions :</p>
+          <ul>
+            <li>
+              Régime végétarien : Supprimer la viande et le poisson du régimealimentaire (Base Carbone ADEME)
+            </li>
+            <li>
+              Manger local : Consommer l'ensemble de son alimentation en circuit court (hypothèse : -90% des émissions de GES liés au fret alimentaire) /!\ L'étude ne prend pas en compte la baisse liée à l’arrêt de la consommation de produits non produits localement.
+            </li>
+            <li>
+              Covoiturage sur tous trajets : 2,2 personnes/voiture sur tous les trajets
+            </li>
+            <li>
+              Vélo trajet court : Remplacer les trajets voiture courte distance en milieu urbain par du vélo (données en passagers.kilomètres issus d’une distribution Compte des transports et Enquête Nationale Transports et Déplacements (ENTD))
+            </li>
+            <li>
+              Transport sans avion : Supprimer 100% des vols domestiques et internationaux
+            </li>
+            <li>
+              Thermostat : Baisser la température de consigne de son logement
+            </li>
+            <li>
+              LEDs basse consommation : Induction d’une économie de 10 kWhEF/m2/an
+            </li>
+            <li>
+              Acheter d'occasion : Achat d’électroménager d’occasion et de produits high-tech reconditionnés : les émissions liées à la phase de production sont mises à zéro. Pour l’électroménager, les émissions liées au transports sont elles aussi mises à zéro. On ne prend pas en compte le surplus de consommation d’énergie induite par l’électroménager d’occasion par rapport à l’électroménager neuf dans la phase d’usage.
+            </li>
+            <li>
+              Moins de vêtement neufs : Acheter trois fois moins de vêtements neufs (Base Carbone ADEME)
+            </li>
+            <li>
+              Zéro déchet et gourde : Mise à zéro de la quantité d’emballages ménagers utilisés en France (source : Ecoemballages).
+            </li>
+            <li>
+              Véhicule bas-carbone : 80% de véhicules électriques ; 10% de véhicules GNV ; 10% de véhicules hybrides rechargeables
+            </li>
+            <li>
+              Isolation bâtiment : étiquette DPE niveau B (consommation d’énergie primaire de 51 à 90 kWh/m2/an)
+            </li>
+            <li>
+              Chaudière bas-carbone : sortie du fioul et gaz au profit de la pompe à chaleur, du bois, du GPL et du réseau de chaleur urbain
+            </li>
+          </ul>
+          <a href="https://www.carbone4.com/wp-content/uploads/2019/06/Publication-Carbone-4-Faire-sa-part-pouvoir-responsabilite-climat.pdf">
+            Carbone 4 - Faire sa part ? Pouvoir et responsabilité des individus, des entreprises et de l'État français face à l'urgence climatique
+          </a>. 🔷
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</section>
