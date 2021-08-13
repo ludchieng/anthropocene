@@ -1,0 +1,205 @@
+.w12 { margin: auto; width: 100%; }
+.w11 { margin: auto; width: 91.6%; }
+.w10 { margin: auto; width: 83.3%; }
+.w9  { margin: auto; width: 75%; }
+.w8  { margin: auto; width: 66.6%; }
+.w7  { margin: auto; width: 58.3%; }
+.w6  { margin: auto; width: 50%; }
+.w5  { margin: auto; width: 41.6%; }
+.w4  { margin: auto; width: 33.3%; }
+.w3  { margin: auto; width: 25%; }
+
+.h12 { margin: auto; height: 100vh; }
+.h11 { margin: auto; height: 91.6vh; }
+.h10 { margin: auto; height: 83.3vh; }
+.h9  { margin: auto; height: 75vh; }
+.h8  { margin: auto; height: 66.6vh; }
+.h7  { margin: auto; height: 58.3vh; }
+.h6  { margin: auto; height: 50vh; }
+.h5  { margin: auto; height: 41.6vh; }
+.h4  { margin: auto; height: 33.3vh; }
+.h3  { margin: auto; height: 25vh; }
+.h2  { margin: auto; height: 16.6vh; }
+
+
+.hidden { display: none; }
+.block { display: block !important; }
+.inline-block { display: inline-block !important; }
+.flex { display: flex !important; }
+.row-reverse { flex-direction: row-reverse !important; }
+.space-between { justify-content: space-between !important; }
+.flex-center { justify-content: center !important; }
+.float-r { float: right !important; };
+.float-l { float: left !important; };
+
+.op100 { opacity: 1 !important; }
+.op90 { opacity: 0.9 !important; }
+.op80 { opacity: 0.8 !important; }
+.op70 { opacity: 0.7 !important; }
+.op60 { opacity: 0.6 !important; }
+.op50 { opacity: 0.5 !important; }
+.op40 { opacity: 0.4 !important; }
+.op30 { opacity: 0.3 !important; }
+.op20 { opacity: 0.2 !important; }
+.op10 { opacity: 0.1 !important; }
+.op0 { opacity: 0 !important; }
+
+.m0 { margin: 0 !important; }
+.m2 { margin: 2px !important; }
+.m4 { margin: 4px !important; }
+.m6 { margin: 6px !important; }
+.m8 { margin: 8px !important; }
+.m12 { margin: 12px !important; }
+.m16 { margin: 16px !important; }
+.m32 { margin: 32px !important; }
+.m64 { margin: 64px !important; }
+
+.mx0 { margin-left: 0 !important; margin-right: 0 !important; }
+.mx2 { margin-left: 2px !important; margin-right: 2px !important; }
+.mx4 { margin-left: 4px !important; margin-right: 4px !important; }
+.mx6 { margin-left: 6px !important; margin-right: 6px !important; }
+.mx8 { margin-left: 8px !important; margin-right: 8px !important; }
+.mx12 { margin-left: 12px !important; margin-right: 12px !important; }
+.mx16 { margin-left: 16px !important; margin-right: 16px !important; }
+.mx32 { margin-left: 32px !important; margin-right: 32px !important; }
+.mx64 { margin-left: 64px !important; margin-right: 64px !important; }
+
+.my0 { margin-top: 0 !important; margin-bottom: 0 !important; }
+.my2 { margin-top: 2px !important; margin-bottom: 2px !important; }
+.my4 { margin-top: 4px !important; margin-bottom: 4px !important; }
+.my6 { margin-top: 6px !important; margin-bottom: 6px !important; }
+.my8 { margin-top: 8px !important; margin-bottom: 8px !important; }
+.my12 { margin-top: 12px !important; margin-bottom: 12px !important; }
+.my16 { margin-top: 16px !important; margin-bottom: 16px !important; }
+.my32 { margin-top: 32px !important; margin-bottom: 32px !important; }
+.my64 { margin-top: 64px !important; margin-bottom: 64px !important; }
+
+.mt0 { margin-top: 0 !important; }
+.mt2 { margin-top: 2px !important; }
+.mt4 { margin-top: 4px !important; }
+.mt6 { margin-top: 6px !important; }
+.mt8 { margin-top: 8px !important; }
+.mt12 { margin-top: 12px !important; }
+.mt16 { margin-top: 16px !important; }
+.mt32 { margin-top: 32px !important; }
+.mt64 { margin-top: 64px !important; }
+
+.mr0 { margin-right: 0 !important; }
+.mr2 { margin-right: 2px !important; }
+.mr4 { margin-right: 4px !important; }
+.mr6 { margin-right: 6px !important; }
+.mr8 { margin-right: 8px !important; }
+.mr12 { margin-right: 12px !important; }
+.mr16 { margin-right: 16px !important; }
+.mr32 { margin-right: 32px !important; }
+.mr64 { margin-right: 64px !important; }
+
+.mb0 { margin-bottom: 0 !important; }
+.mb2 { margin-bottom: 2px !important; }
+.mb4 { margin-bottom: 4px !important; }
+.mb6 { margin-bottom: 6px !important; }
+.mb8 { margin-bottom: 8px !important; }
+.mb12 { margin-bottom: 12px !important; }
+.mb16 { margin-bottom: 16px !important; }
+.mb32 { margin-bottom: 32px !important; }
+.mb64 { margin-bottom: 64px !important; }
+
+.ml0 { margin-left: 0 !important; }
+.ml2 { margin-left: 2px !important; }
+.ml4 { margin-left: 4px !important; }
+.ml6 { margin-left: 6px !important; }
+.ml8 { margin-left: 8px !important; }
+.ml12 { margin-left: 12px !important; }
+.ml16 { margin-left: 16px !important; }
+.ml32 { margin-left: 32px !important; }
+.ml64 { margin-left: 64px !important; }
+
+
+.p0 { padding: 0 !important; }
+.p2 { padding: 2px !important; }
+.p4 { padding: 4px !important; }
+.p6 { padding: 6px !important; }
+.p8 { padding: 8px !important; }
+.p12 { padding: 12px !important; }
+.p16 { padding: 16px !important; }
+.p32 { padding: 32px !important; }
+.p64 { padding: 64px !important; }
+
+.px0 { padding-left: 0 !important; padding-right: 0 !important; }
+.px2 { padding-left: 2px !important; padding-right: 2px !important; }
+.px4 { padding-left: 4px !important; padding-right: 4px !important; }
+.px6 { padding-left: 6px !important; padding-right: 6px !important; }
+.px8 { padding-left: 8px !important; padding-right: 8px !important; }
+.px12 { padding-left: 12px !important; padding-right: 12px !important; }
+.px16 { padding-left: 16px !important; padding-right: 16px !important; }
+.px32 { padding-left: 32px !important; padding-right: 32px !important; }
+.px64 { padding-left: 64px !important; padding-right: 64px !important; }
+
+.py0 { padding-top: 0 !important; padding-bottom: 0 !important; }
+.py2 { padding-top: 2px !important; padding-bottom: 2px !important; }
+.py4 { padding-top: 4px !important; padding-bottom: 4px !important; }
+.py6 { padding-top: 6px !important; padding-bottom: 6px !important; }
+.py8 { padding-top: 8px !important; padding-bottom: 8px !important; }
+.py12 { padding-top: 12px !important; padding-bottom: 12px !important; }
+.py16 { padding-top: 16px !important; padding-bottom: 16px !important; }
+.py32 { padding-top: 32px !important; padding-bottom: 32px !important; }
+.py64 { padding-top: 64px !important; padding-bottom: 64px !important; }
+
+.pt0 { padding-top: 0px !important; }
+.pt2 { padding-top: 2px !important; }
+.pt4 { padding-top: 4px !important; }
+.pt6 { padding-top: 6px !important; }
+.pt8 { padding-top: 8px !important; }
+.pt12 { padding-top: 12px !important; }
+.pt16 { padding-top: 16px !important; }
+.pt32 { padding-top: 32px !important; }
+.pt64 { padding-top: 64px !important; }
+
+.pr0 { padding-right: 0px !important; }
+.pr2 { padding-right: 2px !important; }
+.pr4 { padding-right: 4px !important; }
+.pr6 { padding-right: 6px !important; }
+.pr8 { padding-right: 8px !important; }
+.pr12 { padding-right: 12px !important; }
+.pr16 { padding-right: 16px !important; }
+.pr32 { padding-right: 32px !important; }
+.pr64 { padding-right: 64px !important; }
+
+.pb0 { padding-bottom: 0px !important; }
+.pb2 { padding-bottom: 2px !important; }
+.pb4 { padding-bottom: 4px !important; }
+.pb6 { padding-bottom: 6px !important; }
+.pb8 { padding-bottom: 8px !important; }
+.pb12 { padding-bottom: 12px !important; }
+.pb16 { padding-bottom: 16px !important; }
+.pb32 { padding-bottom: 32px !important; }
+.pb64 { padding-bottom: 64px !important; }
+
+.pl0 { padding-left: 0px !important; }
+.pl2 { padding-left: 2px !important; }
+.pl4 { padding-left: 4px !important; }
+.pl6 { padding-left: 6px !important; }
+.pl8 { padding-left: 8px !important; }
+.pl12 { padding-left: 12px !important; }
+.pl16 { padding-left: 16px !important; }
+.pl32 { padding-left: 32px !important; }
+.pl64 { padding-left: 64px !important; }
+
+
+.txt-l { text-align: left !important; }
+.txt-c { text-align: center !important; }
+.txt-r { text-align: right !important; }
+
+.txt-bold { font-weight: bold }
+
+.txt-line-through { text-decoration: line-through; }
+
+.txt-xl { font-size: 1.4em !important; }
+.txt-lg { font-size: 1.2em !important; }
+.txt-md { font-size: 0.9em !important; }
+.txt-sm { font-size: 0.8em !important; }
+.txt-xs { font-size: 0.65em !important; }
+
+.txt-uppercase { text-transform: uppercase;}
+
+.boxed { border: 2px solid white; }

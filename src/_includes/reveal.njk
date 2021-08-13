@@ -1,0 +1,155 @@
+<!------------------
+   Import plugins
+------------------->
+
+<script src="/js/reveal/reveal.js"></script>
+<script src="/js/reveal/plugin/notes/notes.js"></script>
+<script src="/js/reveal/plugin/markdown/markdown.js"></script>
+<script src="/js/reveal/plugin/math/math.js"></script>
+<script src="/js/reveal/plugin/zoom/zoom.js"></script>
+
+<!------------------
+  chart.js config
+------------------->
+
+<script>
+  const mainColor = getComputedStyle(document.body).getPropertyValue('--main-color');
+  const bgColor = getComputedStyle(document.body).getPropertyValue('--background-color');
+  const mainFont = getComputedStyle(document.body).getPropertyValue('--main-font');
+  const chartConfig = {
+    defaults: {
+      global: {
+        defaultFontFamily: mainFont,
+        defaultFontColor: mainColor,
+        defaultFontSize: 32,
+        animation: {
+          duration: 1000,
+          easing: 'easeInOutCubic',
+        },
+        title: {
+          display: true,
+          position: "bottom",
+          fontColor: mainColor
+        },
+        legend: {
+          position: "right",
+          labels: {
+            fontColor: mainColor
+          },
+        },
+        tooltips: {
+          xPadding: 16,
+          yPadding: 12,
+          /*callbacks: {
+            label: function (item, data) {
+              let dataset = data.datasets[item.datasetIndex];
+              let currentValue = dataset.data[item.index];
+              console.log(dataset.unit)
+
+              let sum = 0;
+              for (let value of dataset.data) {
+                sum += value;
+              }
+
+              let percentage = ((currentValue / sum) * 100).toFixed(1);
+              return [
+                `${currentValue} \t (${percentage} %)`
+              ];
+            }
+          }*/
+        },
+        plugins: {
+          datalabels: {
+            backgroundColor: (context) => context.dataset.backgroundColor,
+            borderColor: 'white',
+            borderRadius: 25,
+            borderWidth: 2,
+            color: 'white',
+            display: (context) => {
+              var dataset = context.dataset;
+              var value = dataset.data[context.dataIndex];
+              var sum = 0;
+              for (let v of dataset.data) {
+                sum += v;
+              }
+              return value > sum * 0.1;
+            },
+            font: {
+              weight: 'bold'
+            },
+            formatter: Math.round
+          }/*,
+          annotation: {
+            drawTime: 'afterDatasetsDraw',
+            annotations: [{
+                display: true,
+                type: 'line',
+                scaleID: 'y'
+            }]
+          }*/
+        }
+      },
+      scale: {
+        scaleLabel: {
+          fontColor: mainColor
+        },
+        gridLines: {
+          color: mainColor,
+          zeroLineColor: mainColor
+        },
+        ticks: {
+          fontColor: mainColor
+        },
+      }
+    },
+    line: {
+      borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"],
+      borderWidth: "5",
+      fill: false,
+    },
+    bar: {
+      backgroundColor: ["#90b86f", "#70a8ff", "#8f5ba5", "#fecf41", "#fe9458", "#eb5f50", "#f298bb", "#9f9f9f", "#454545", "#856b46", "#dbdbdb"]
+    },
+    pie: {
+      backgroundColor: ["#90b86f", "#70a8ff", "#8f5ba5", "#fecf41", "#fe9458", "#eb5f50", "#f298bb", "#9f9f9f", "#454545", "#856b46", "#dbdbdb"]
+    },
+    doughnut: {
+      backgroundColor: ["#90b86f", "#70a8ff", "#8f5ba5", "#fecf41", "#fe9458", "#eb5f50", "#f298bb", "#9f9f9f", "#454545", "#856b46", "#dbdbdb"]
+    },
+    radar: {
+      borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]
+    }
+  };
+</script>
+
+
+<!-------------------
+  reveal.js config
+-------------------->
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    minScale: 0.33,
+    maxScale: 1,
+    width: 1920,
+    height: 1080,
+    transition: 'fade',
+    chart: chartConfig,
+    slideNumber: i => {
+      return [Reveal.getIndices(i).h + 1, "/", Reveal.getHorizontalSlides().length]
+    },
+    plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealZoom],
+
+    // Load plugins with old method
+    dependencies: [{
+      src: '/js/reveal/plugin/chart/chart.bundle.min.js'
+    }, {
+      src: '/js/reveal/plugin/chart/chartjs-plugin-datalabels.js'
+    }, {
+      src: '/js/reveal/plugin/chart/chartjs-plugin-annotation.js'
+    }, {
+      src: '/js/reveal/plugin/chart/csv2chart.js'
+    }, ],
+  });
+</script>

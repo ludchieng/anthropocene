@@ -1,0 +1,47 @@
+blockquote {
+  box-shadow: 0 0 0 #000 !important;
+  background: transparent !important;
+}
+
+blockquote > .content {
+	text-align: left;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+}
+
+blockquote > .content:before,
+blockquote > .content:after {
+	position: absolute;
+	color: #9999;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote > .content:before {
+	content: '“';
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote > .content:after {
+	content: '”';
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+	right: -5rem;
+	bottom: 1rem;
+}
+
+blockquote > .meta {
+	line-height: 3;
+}
+
+table, td, th {
+  border: 2px solid #888;
+}
+
+th {
+	background-color: #8883;
+}

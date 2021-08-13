@@ -1,0 +1,23 @@
+{
+  "name": "aledslide",
+  "version": "1.0.0",
+  "description": "Course slides web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "rename": "./scripts/rename.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludchieng/aledslide.git"
+  },
+  "author": "Ludwig Chieng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ludchieng/aledslide/issues"
+  },
+  "homepage": "https://github.com/ludchieng/aledslide#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

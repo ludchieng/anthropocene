@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metadata.title }}</title>
+  <link rel="icon" type="image/png" href="{{ metadata.favicon }}">
+  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/fonts.css">
+</head>
+<body id="index">
+  <main class="large-width">
+  
+    <header>
+      <h1>{{ metadata.title }}</h1>
+    </header>
+
+    <hr/>
+
+    {%- if metadata.greetings %}
+    <section>
+      <p>
+        {{ metadata.greetings }}
+      </p>
+    </section>
+    {%- endif %}
+
+    <h2>Cours</h2>
+    <ul>
+      {%- for page in collections.all %}
+      {%- if page.data.layout === 'course' %}
+        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+      {%- endif %}
+      {%- endfor %}
+    </ul>
+
+    <hr/>
+
+    <footer>
+      <span>
+        {{ metadata.author }}
+        · <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+      </span>
+      <a href="{{ metadata.github.href }}">
+        {{ metadata.github.label }}
+      </a>
+    </footer>
+
+  </main>
+</body>
+</html>

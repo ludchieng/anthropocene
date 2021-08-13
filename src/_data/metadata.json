@@ -1,0 +1,13 @@
+{
+  "title": "Aledslide 🏰",
+  "lang": "fr",
+  "favicon": "/assets/favicon.png",
+  "author": "Ludwig Chieng",
+  "email": "lud.chieng@hotmail.fr",
+  "url": "https://anthropocene.ludchieng.fr",
+  "github": {
+    "label": "@ludchieng/aledslide",
+    "href": "https://github.com/ludchieng/aledslide"
+  },
+  "greetings": "Regardez cette magnifique liste de cours !"
+}

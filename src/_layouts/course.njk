@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }} · {{ metadata.title }}</title>
+	<link rel="icon" href="/assets/favicon.png">
+	<link rel="stylesheet" href="/js/reveal/reset.css">
+	<link rel="stylesheet" href="/js/reveal/reveal.css">
+	<link rel="stylesheet" href="/styles/layout.css">
+	<link rel="stylesheet" href="/styles/content.css">
+	<link rel="stylesheet" href="/styles/fonts.css">
+	<link rel="stylesheet" href="/styles/theme-{{ global.theme }}.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<section data-transition="slide">
+					<h1>{{ title }}</h1>
+					<hr />
+					<h3>{{ subtitle }}</h3>
+					<br />
+					<p>{{ metadata.author }}</p>
+					<p><a href="{{ metadata.url }}">{{ metadata.url }}</a></p>
+					<aside class="notes" data-markdown>
+						{{ notes }}
+					</aside>
+				</section>
+			</section>
+
+			{%- for slideFile in (dir | getSlides) -%}
+			{%- include slideFile -%}
+			{%- endfor -%}
+
+		</div>
+	</div>
+</body>
+
+{%- include 'reveal.njk' -%}
+
+</html>
