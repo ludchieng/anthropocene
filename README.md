@@ -2,6 +2,8 @@
 
 Courses on ecology, energy and climate issues seen through a French prism.
 
+Project based on [@ludchieng/aledslide](https://github.com/ludchieng/aledslide).
+
 This course is a synthesis of the important elements to know, from my point of view, about the crisis of the Anthropocene. The idea is to overview and link the key themes. The goal is not to see them in detail.
 
 
