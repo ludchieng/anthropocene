@@ -27,10 +27,8 @@
 
     <h2>Cours</h2>
     <ul>
-      {%- for page in collections.all %}
-      {%- if page.data.layout === 'course' %}
+      {%- for page in collections.courses %}
         <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-      {%- endif %}
       {%- endfor %}
     </ul>
 

@@ -8,6 +8,20 @@ module.exports = function (config) {
   
   config.addWatchTarget("./src/**/slides/*");
 
+  /* Collections */
+
+  config.addCollection('courses', (collectionApi) => {
+    return collectionApi.getAll()
+      .filter((page) => page.data.layout === 'course')
+      .sort((a, b) => (
+        a.data.dir === b.data.dir
+        ? 0
+        : a.data.dir > b.data.dir
+          ? 1
+          : -1
+    ))
+  })
+
   /* Filters */
 
   config.addFilter('getSlides', (course) => {
