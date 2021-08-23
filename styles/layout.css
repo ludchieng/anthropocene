@@ -29,6 +29,7 @@
 .row-reverse { flex-direction: row-reverse !important; }
 .space-between { justify-content: space-between !important; }
 .flex-center { justify-content: center !important; }
+.align-items-baseline { align-items: baseline; }
 .float-r { float: right !important; };
 .float-l { float: left !important; };
 
@@ -54,6 +55,7 @@
 .m32 { margin: 32px !important; }
 .m64 { margin: 64px !important; }
 
+.mxauto { margin-left: auto !important; margin-right: auto !important; }
 .mx0 { margin-left: 0 !important; margin-right: 0 !important; }
 .mx2 { margin-left: 2px !important; margin-right: 2px !important; }
 .mx4 { margin-left: 4px !important; margin-right: 4px !important; }
