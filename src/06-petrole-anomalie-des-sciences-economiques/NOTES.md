@@ -1,0 +1,2 @@
+Aristote. Politique, Livre I, IV, 1253 b 37.
+Si les navettes tissaient toutes seules, si le plectre jouait tout seul de la cithare, les entrepreneurs se passeraient d’ouvriers, et les maîtres, d’esclaves
