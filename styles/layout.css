@@ -30,6 +30,7 @@
 .space-between { justify-content: space-between !important; }
 .flex-center { justify-content: center !important; }
 .align-items-baseline { align-items: baseline; }
+.align-items-center { align-items: center; }
 .float-r { float: right !important; };
 .float-l { float: left !important; };
 
