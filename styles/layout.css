@@ -28,9 +28,13 @@
 .flex { display: flex !important; }
 .row-reverse { flex-direction: row-reverse !important; }
 .space-between { justify-content: space-between !important; }
-.flex-center { justify-content: center !important; }
+.justify-content-center { justify-content: center !important; }
+.justify-content-end { justify-content: end !important; }
 .align-items-baseline { align-items: baseline; }
 .align-items-center { align-items: center; }
+
+.v-align-mid { vertical-align: middle; }
+
 .float-r { float: right !important; };
 .float-l { float: left !important; };
 
